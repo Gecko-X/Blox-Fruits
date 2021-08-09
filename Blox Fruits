@@ -2573,6 +2573,12 @@ function Kavo.CreateLib(kavName, themeList)
 end
 
 return Kavo
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Blox Fruit", "Synapse")
+ 
+local Tab = Window:NewTab("Main Menu")
+local Section = Tab:NewSection("Teleport")
  
 Section:NewButton("Pirate Start", "ButtonInfo", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078.39026, 16.273613, 1441.29028, 0.515464365, -2.36730688e-08, 0.856911004, -3.09099413e-08, 1, 4.62195509e-08, -0.856911004, -5.0311602e-08, 0.515464365 )
